@@ -6,6 +6,7 @@
   "dependencies": {
     "node-spotify-api": "^1.0.7",
     "pkg.json": "^2.0.6",
+    "request": "^2.83.0",
     "twitter": "^1.7.1"
   },
   "devDependencies": {},
