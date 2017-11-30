@@ -1,13 +1,17 @@
 var command = process.argv[2];
-var movSong = proscess.argv[3];
+var movSong = process.argv[3];
 
+var spotifyKeys = require('./keys.js')
+var twitterKeys = require('./keys.js');
 
-var spotifyID = (keys.js(spotifyKeys.clientID));
-var spotifySecret = (keys.js(spotifyKeys.clientSecret));
-var tConsumerKey = (keys.js(twitterKeys.consumer_key));
-var tconsumerSecret = (keys.js(twitterKeys.consumber_secret));
-var taccessKey = (key.js(twitterKeys.acess_token_key));
-var taccessSecret = (keys.js(twitterKeys.access_token_secret));
+var spotifyID = spotifyKeys.clientID;
+var spotifySecret = spotifyKeys.clientSecret;
+var tConsumerKey = twitterKeys.consumer_key;
+var tconsumerSecret = twitterKeys.consumber_secret;
+var taccessKey = twitterKeys.acess_token_key;
+var taccessSecret = twitterKeys.access_token_secret;
+
+var Twitter = require('twitter');
 
 var params = {screen_name: 'nodejs'};
 client.get('statuses/user_timeline', params, function(error, tweets, response) {
@@ -29,7 +33,7 @@ request('http://img.omdbapi.com/?t='+ movSong +'apikey=[e35a6893]&', function (e
     }
 });
 
-search: function({ type: 'track', query: 'movSong', limit: 1 }, callback);
+// search: function({ type: 'track', query: 'movSong', limit: 1 }, callback);
 
 var Spotify = require('node-spotify-api');
 

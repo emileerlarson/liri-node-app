@@ -14,4 +14,7 @@ var spotifyKeys = {
     clientSecret: 'b3685cbdf6d044f582a47c339695bf00'
 };
 
-module.exports = (twitterKeys, spotifyKeys);
+module.exports = {
+    twitterKeys, 
+    spotifyKeys,
+};
